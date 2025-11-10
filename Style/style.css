@@ -1,0 +1,242 @@
+        * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+        }
+
+        body {
+        overflow: hidden;
+        font-family: sans-serif;
+        background-color: #fada4f;
+        color: white;
+        }
+
+        header {
+            background-color: #f9c826;
+            height: 82px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+        }
+
+        nav ul {
+            display: flex;
+            position: absolute;
+            top: 2%;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 1rem;
+        }
+
+        .logo  h3 {
+            position: absolute;
+            color: #b25b0b;
+            top: 5%;
+        }
+
+        .logo {
+            margin: 12px;
+            display: inline-block;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        .logo img {
+            position: absolute;
+            top: 1%;
+            left: 1%;
+            margin-right: 12px;
+            border-radius: 12px;
+            height: 34px;
+            width: 44px;
+        }
+
+        .right-nav {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 2%;
+            right: 1%;
+        }
+
+        .hero {
+            font-size: 24px;
+            margin: 24px 0;
+        }
+
+        .hero span {
+            color: #b25b0b;
+            font-weight: 700;
+        }
+
+
+        button {
+            font: inherit;
+        }
+
+        .dropdown {
+            position: relative;
+            color: white;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            right: 6%;
+            display: none;
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .dropdown-content ol {
+            background-color: #b25b0b;
+            width: 200px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .dropdown-content ol li  {
+            padding: 12px 0;
+        }
+
+                .dropdown-content ol li:hover  {
+                    transform: scale(1.05);
+                    background-color: #d78008;
+                    border-radius: 12px;
+        }
+
+        .dropdown-content ol li a {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            z-index: 9;
+        }
+
+        .action button:hover, .dropdown:hover {
+             transform: scale(1.03);
+        }
+
+       .action .btn, .dropdown, nav ul li:hover {
+        border: none;
+            background-color: #b25b0b;
+            color: #fff;
+            padding: 4px 12px;
+            margin:  0 12px;
+            text-decoration: none;
+            border-radius: 12px;
+        }
+
+       .header .action .btn a {
+            text-decoration: none;
+            color: white;
+        }
+        main {
+        text-align: center;
+        display: flex;
+        height: 90vh;
+        }
+        section {
+            flex: 3;
+            align-self: center;
+        }
+        aside {
+            flex: 1;
+            background-color: #f3a910;
+            color: white;
+            height: 100%;
+        }
+
+        aside ol {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        aside ol li {
+            padding: 1rem 0;
+        }
+
+                aside ol li.active,  aside ol li:hover {
+            background-color: #b25b0b;
+            border-left: 12px solid #fada4f;
+        }
+
+
+         aside ol li:hover {
+            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+            transform: scale(1.03);
+            padding: 12px ;
+            border-radius: 8px;
+        }
+
+        aside ol li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #f9c826;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 24px;
+        }
+
+        footer div ul li:hover {
+            transform: scale(1.1);
+        }
+
+        .second_div ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+                    .first_div ul li {
+                        padding: 3px 0;
+        }
+
+            .first_div ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .second_div, .first_div {
+            margin-bottom: 24px;
+        }
+
+
+        footer .second-div {
+            position: relative;
+            bottom: 0;
+        }
+
+        .second_div ul {
+            display: flex;
+        }
+        .second_div ul li {
+            padding: 12px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .Copyright {
+            position: absolute;
+            bottom: 0;
+            color: white;
+        }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+
+    <title>Online Course Register</title>
+    <style>
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+                        padding: 1rem;
+        }
+
+        .form-container {
+            margin: 12px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+        }
+        .form-group {
+            padding: 14px;
+        }
+        .form-input {
+            border: 1px solid black;
+            border-radius: 9px;
+        }
+
+        .actions {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+                <h1>📚Online Course Register and Learning Managment System</h1>
+            
+            <nav>
+                <ul  style="list-style: none;">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="#">Grades</a></li>
+                    <li><a href="#">Announcement</a></li>
+                </ul>
+            </nav>
+            
+            <div class="actions">
+                <button class="btn"><a href="login.html">Login</a></button>
+                <button class="btn">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <main >
+            <h2>Student Registration</h2>
+        <div class="form-container">
+            <form >
+                <div class="form-group">
+                    <label  for="firstName">First Name</label> 
+                    <input type="text" class="form-input" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label  for="lastName">Last Name</label>
+                    <input type="text" class="form-input" id="lastName" name="lastName" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label  for="email">Email </label>
+                    <input type="email" class="form-input" id="email" name="email" required>
+                </div>
+
+                                <div class="form-group">
+                    <label  for="password">Password</label>
+                    <input type="password" class="form-input" id="password" name="password" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label  for="phone">Phone Number</label>
+                    <input type="number" class="form-input" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label  for="dob">Date of Birth</label>
+                    <input type="date" class="form-input" id="dob" name="dob" required>
+                </div>
+                
+                <div class="form-group">
+                    <label  for="major"> Department</label>
+                    <select class="form-input" id="major" name="major" required>
+                        <option value="">Select Major</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="ce">Computer Enginneering</option>
+                        <option value="it">Information Technology</option>
+                        <option value="engineering">Softare Engineering</option>
+                    </select>
+                </div>
+                
+                                
+                <button type="submit" >Register Now</button>
+                
+                <div>
+                    <p>already have an account? <a href="#">login here</a></p>
+                </div>
+            </form>
+        </div>
+
+            <h2>Course Registration</h2>
+        <div class="form-container">
+            <form >
+                <div class="form-group">
+                    <label  for="studentId">Student ID</label>
+                    <input type="text" class="form-input" id="studentId" name="studentId" placeholder="WDU" required>
+                </div>
+                
+                <div class="form-group">
+                    <label  for="semester">Semester</label>
+                    <select class="form-input" id="semester" name="semester" required>
+                        <option value="">Select Semester</option>
+                        <option value="1"> 1<sup>st</sup> 2018</option>
+                        <option value="2"> 2<sup>nd</sup> 2018</option>
+                        <option value="3"> 3<sup>rd</sup> 2018</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label  for="courseSelection">Select Courses</label>
+                    <div >
+                        <label >
+                            <input type="checkbox" name="courses" value="cs101"> CS101 - Introduction to Programming
+                        </label>
+                        <labe>
+                            <input type="checkbox" name="courses" value="cs102"> CS102 - Web development
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit">Register for Courses</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
