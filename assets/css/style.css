@@ -1,6 +1,6 @@
 :root {
-    --text-color: white;
-    --bg-color: #fada4f;
+    --text-color: #ffffff;
+    --bg-color: #ffffff;
     --primary-color: #f3a910;
     --secondary-color: #b25b0b;
     --border-radius: 0.7rem;
@@ -86,6 +86,7 @@ nav ul li a {
         }
 
         .hero {
+            color: #f3a910;
             font-size: 24px;
             margin: 24px 0;
         }
@@ -94,6 +95,7 @@ nav ul li a {
             color: #b25b0b;
             font-weight: 700;
         }
+        
 
 
         button {
@@ -103,6 +105,18 @@ nav ul li a {
         .dropdown {
             position: relative;
             color: white;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .dropdown img {
+            width: 24px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
 
         .dropdown-content {
@@ -110,13 +124,12 @@ nav ul li a {
             right: 6%;
             display: none;
             color: var(--text-color);
-            border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
         .dropdown-content ol {
             background-color: #b25b0b;
-            width: 200px;
+            width: 100px;
             border-radius: 12px;
             text-align: center;
         }
@@ -151,7 +164,6 @@ nav ul li a {
             padding: 4px 12px;
             margin:  0 12px;
             text-decoration: none;
-            border-radius: 12px;
         }
 
         main {
@@ -160,7 +172,10 @@ nav ul li a {
         }
         section {
             flex: 3;
-            align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
         }
         aside {
             flex: 1;
