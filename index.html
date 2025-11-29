@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <title>NorthEast College</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link rel="icon" type="image/png" href="favicon.ico" >
+    <link rel="icon" type="image/png" href="./assets/icons/favicon.ico" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-    </style>
 </head>
 <body>
     <header class="header">
@@ -20,8 +18,8 @@
                     <h3>NorthEast College</h3>
                     </a>
                 </div>
-                <ul  style="list-style: none;">
-                    <li><a href="index.html">Home</a></li>
+                <ul class="nav-links">
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="#">Courses</a></li>
                     <li><a href="about.html">Announcement</a></li>
                 </ul>
@@ -30,10 +28,10 @@
             <div class="right-nav">
                     <div class="dropdown"> <img src="./assets/icons/user-svgrepo-com.svg" alt="Default Profile">
                         <div class="dropdown-content">
-                            <ol style="list-style:none;">
+                            <ol>
                                 <li><a href="./dashboard/student-dashboard.html">Profile</a></li>
                                 <li><a href="instructor-dashbord.html">About Us</a></li>
-                                <li><a href="depthead-dashbord.html"></a>FAQ</li>
+                                <li><a href="depthead-dashbord.html">FAQ</a></li>
                             </ol>
                         </div>
                     </div>
@@ -51,54 +49,111 @@
                 <h1>NorthEast College</h1>
                 <h4>Success is our tradition at NorthEast College!</h4>
                 <div class="welcome-msg">Welcome to <span>NorthEast</span> College!</div>
+                <div id="ab1" class="abstract"><img src="assets/images/outlined.svg" alt="" width="399px"></div>
+                <div id="s-ab1" class="abstract"><img src="assets/images/solid.svg" alt="" width="399px"></div>
                 <p>Register, explore courses, and track your progress - all in one place.</p>
+                <div id="ab2" class="abstract"><img src="assets/images/outlined.svg" alt="" width="399px"></div>
                 <div class="btns">
                     <div class="btn primary">Register Now</div>
                     <div class="btn secondary">Browse Courses</div>
                 </div>
                 <div class="illustration"><img src="assets/images/undraw_online-learning_tgmv.svg" alt=""></div>
+                <div class="illustration"><img src="assets/images/undraw_programming_j1zw.svg" alt=""></div>
                 <!-- add animation on blob -->
-                <div class="abstract"><img src="assets/images/blob-haikei.svg (1).xml" alt="" width="399px"></div>
+                <div id="ab3" class="abstract"><img src="assets/images/outlined.svg" alt="" width="399px"></div>
+                <div id="s-ab2" class="abstract"><img src="assets/images/solid.svg" alt="" width="399px"></div>
             </div>
         </section>
         <section class="main-features">
-
+            <div class="card-container">
+                <!-- 3-4 size, icons, hover and scale -->
+                <div class="card">
+                    <h3>Easy Registration</h3>
+                    <p>Create an account in seconds and start learning instantly.</p>
+                </div>
+                <div class="card">
+                    <h3>Interactive Lessons</h3>
+                    <p>Access curated lessons, videos, assignments, and quizzes</p>
+                </div>
+                <div class="card">
+                    <h3>Progress Tracking</h3>
+                    <p>Track course completion and see your improvement</p>
+                </div>
+                
+            </div>
         </section>
         <section class="popular-courses">
-
+            <!-- grid 3 for mobile 1 for desktop-->
+             <div class="card-container">
+                <div class="card">
+                    <img src="" alt="" class="thumbnail">
+                    <h4 class="title"></h4>
+                    <p class="disc"></p>
+                    <p class="instructor"></p>
+                    <button>View Course</button>
+                </div>
+                <div class="card">
+                    <img src="" alt="" class="thumbnail">
+                    <h4 class="title"></h4>
+                    <p class="disc"></p>
+                    <p class="instructor"></p>
+                    <button>View Course</button>
+                </div>
+                <div class="card">
+                    <img src="" alt="" class="thumbnail">
+                    <h4 class="title"></h4>
+                    <p class="disc"></p>
+                    <p class="instructor"></p>
+                    <button>View Course</button>
+                </div>
+             </div>
+        </section>
+        <section class="flow">
+            <div class="container">
+                <!-- register, browse and enroll, learn and track -->
+                <div class="step" id="step1">
+                    <h3><span>step 1: </span>Register an Account</h3>
+                    <p>Choose your role(student or teacher) and sign up.</p>
+                </div>
+                <div class="step" id="step2">
+                    <h3><span>step 2: </span>Browse & Enroll in Courses</h3>
+                    <p>Find courses that match your goals.</p>
+                </div>
+                <div class="step" id="step3">
+                    <h3><span>step 3: </span>Learn and Track Progress </h3>
+                    <p>Access lessons, assignments, and quizzes.</p>
+                </div>
+            </div>
         </section>
         <!-- CALL TO ACTION -->
+         <section class="CTA">
+            <div class="containter">
+                <div class="card">Ready to start learning? Create your free account now.</div>
+                <button>Get Started</button>
+            </div>
+         </section>
     </main>
 
     <footer>
         <div class="footer-container">
-                <div class="address">
-                    <p>Ethiopia - woldia</p>
-                </div>
-                        <div class="social-links">
-            <ul style="list-style: none;" >
-            <li>
-                <a href="">Facebook</a>
-            </li>
-            <li>
-                <a href="">LinkedIn</a>
-            </li>
-            <li>
-                <a href="">X</a>
-            </li>
-                        <li>
-                <a href="">Telegram</a>
-            </li>
-        </ul>
-         </div>
-        </div>
-        </div>
+                <div class="address"><p>Ethiopia - woldia</p></div>
+        <!-- <div class="social-links">
+                <ul style="list-style: none;" >
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">X</a></li>
+                    <li><a href="">Telegram</a></li>
+                </ul> 
+            </div> -->
 
-         <div class="Copyright">
-                     <p >
-        &copy; Copyright reserved, NorthEast College 2025
-         </p>
-         </div>
+        <div class="links">
+            <div class="policy">Private Policy</div>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+        <div class="Copyright">
+            <p>&copy; Copyright reserved, NorthEast College 2025</p>
+        </div>
     </footer>
 
 </body>

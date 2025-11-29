@@ -2,63 +2,49 @@
 <html >
 <head>
     <meta charset="utf-8">
-
-    <title>Online Course Register</title>
-    <style>
-
-        nav ul {
-            display: flex;
-        }
-
-        nav ul li {
-                        padding: 1rem;
-        }
-
-        .form-container {
-            margin: 12px;
-            border: 2px solid black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 800px;
-        }
-        .form-group {
-            padding: 14px;
-        }
-        .form-input {
-            border: 1px solid black;
-            border-radius: 9px;
-        }
-
-        .actions {
-            float: right;
-        }
-    </style>
+    <title>NorthEast College</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.ico" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <header class="header">
-                <h1>📚Online Course Register and Learning Managment System</h1>
-            
-            <nav>
-                <ul  style="list-style: none;">
-                    <li><a href="#">Home</a></li>
+        <!-- Keep it sticky, light background, box-shadow, underline grows animation to the links -->
+        <nav>
+            <div class="left-nav">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="../assets/images/icon.jpg" ></img>
+                    <h3>NorthEast College</h3>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a class="" href="../index.html">Home</a></li>
                     <li><a href="#">Courses</a></li>
-                    <li><a href="#">Registration</a></li>
-                    <li><a href="#">Grades</a></li>
-                    <li><a href="#">Announcement</a></li>
+                    <li><a href="about.html">Announcement</a></li>
                 </ul>
-            </nav>
-            
-            <div class="actions">
-                <button class="btn"><a href="login.html">Login</a></button>
-                <button class="btn">Register</button>
             </div>
-        </div>
+
+            <div class="right-nav">
+                    <div class="dropdown"> <img src="../assets/icons/user-svgrepo-com.svg" alt="Default Profile">
+                        <div class="dropdown-content">
+                            <ol>
+                                <li><a href="./dashboard/student-dashboard.html">Profile</a></li>
+                                <li><a href="instructor-dashbord.html">About Us</a></li>
+                                <li><a href="depthead-dashbord.html">FAQ</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                <div class="action">
+                </div>
+                <div class="hamburger-menu"></div>
+            </div>
+        </nav>
     </header>
 
     <main >
             <h2>Student Registration</h2>
-        <div class="form-container">
+        <div class="form-container form-reg">
             <form >
                 <div class="form-group">
                     <label  for="firstName">First Name</label> 
@@ -97,52 +83,13 @@
                     <select class="form-input" id="major" name="major" required>
                         <option value="">Select Major</option>
                         <option value="cs">Computer Science</option>
-                        <option value="ce">Computer Enginneering</option>
+                        <option value="ce">Computer Engineering</option>
                         <option value="it">Information Technology</option>
-                        <option value="engineering">Softare Engineering</option>
+                        <option value="engineering">Software Engineering</option>
                     </select>
                 </div>
                 
-                                
                 <button type="submit" >Register Now</button>
-                
-                <div>
-                    <p>already have an account? <a href="#">login here</a></p>
-                </div>
-            </form>
-        </div>
-
-            <h2>Course Registration</h2>
-        <div class="form-container">
-            <form >
-                <div class="form-group">
-                    <label  for="studentId">Student ID</label>
-                    <input type="text" class="form-input" id="studentId" name="studentId" placeholder="WDU" required>
-                </div>
-                
-                <div class="form-group">
-                    <label  for="semester">Semester</label>
-                    <select class="form-input" id="semester" name="semester" required>
-                        <option value="">Select Semester</option>
-                        <option value="1"> 1<sup>st</sup> 2018</option>
-                        <option value="2"> 2<sup>nd</sup> 2018</option>
-                        <option value="3"> 3<sup>rd</sup> 2018</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label  for="courseSelection">Select Courses</label>
-                    <div >
-                        <label >
-                            <input type="checkbox" name="courses" value="cs101"> CS101 - Introduction to Programming
-                        </label>
-                        <labe>
-                            <input type="checkbox" name="courses" value="cs102"> CS102 - Web development
-                        </label>
-                    </div>
-                </div>
-                
-                <button type="submit">Register for Courses</button>
             </form>
         </div>
     </main>
